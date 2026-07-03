@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class & Pseudo-element Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Hover Link */
+        a {
+            color: teal;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: crimson;
+            text-decoration: underline;
+        }
+
+        /* Hover Button */
+        .btn {
+            background: teal;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: darkcyan;
+        }
+
+        /* Focus Input */
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+            background: #f0f8ff;
+        }
+
+        /* Zebra Table */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* List with Stars */
+        .features li::before {
+            content: "★ ";
+            color: orange;
+        }
+
+        /* Heading Decoration */
+        h1::after {
+            content: " ✔";
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo-class & Pseudo-element Example</h1>
+
+    <!-- Hover Link -->
+    <p>
+        Visit
+        <a href="https://example.com" target="_blank">
+            Example Website
+        </a>
+    </p>
+
+    <!-- Hover Button -->
+    <button class="btn">Hover Me</button>
+
+    <!-- Focus Input -->
+    <h2>Input Focus</h2>
+    <input type="text" placeholder="Click here to focus">
+
+    <!-- Zebra Table -->
+    <h2>Student Marks</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>Bob</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>Charlie</td>
+            <td>92</td>
+        </tr>
+
+        <tr>
+            <td>David</td>
+            <td>88</td>
+        </tr>
+    </table>
+
+    <!-- List with Stars -->
+    <h2>Features</h2>
+
+    <ul class="features">
+        <li>Responsive Design</li>
+        <li>Fast Performance</li>
+        <li>Easy to Use</li>
+        <li>Cross-browser Support</li>
+    </ul>
+
+</body>
+</html>

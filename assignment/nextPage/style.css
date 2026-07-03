@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f8f8f5;
+}
+
+/* Navigation */
+
+nav{
+    height:70px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.circle{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#84d96b,#178b65);
+}
+
+.logo h2{
+    color:#1d3153;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#1d3153;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#1ea96f;
+}
+
+/* Hero */
+
+.hero{
+    width:85%;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Left */
+
+.left{
+    width:48%;
+}
+
+.small{
+    color:gray;
+    letter-spacing:4px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.left h1{
+    font-size:60px;
+    color:#1d3153;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.desc{
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn1{
+    background:#18345c;
+    color:white;
+    padding:16px 32px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn2{
+    border:2px solid #18345c;
+    color:#18345c;
+    padding:16px 32px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn1:hover{
+    background:#275389;
+}
+
+.btn2:hover{
+    background:#18345c;
+    color:white;
+}
+
+/* Right */
+
+.right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+/* Plant Box */
+
+.plant-box{
+    width:420px;
+    height:420px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#49d6c4,#198b6a);
+    position:relative;
+}
+
+/* Stem */
+
+.stem{
+    width:8px;
+    height:170px;
+    background:#234;
+    position:absolute;
+    left:205px;
+    top:110px;
+}
+
+/* Leaves */
+
+.leaf{
+    position:absolute;
+    width:65px;
+    height:95px;
+    border-radius:50%;
+}
+
+.leaf1{
+    background:#2c7f43;
+    left:150px;
+    top:80px;
+}
+
+.leaf2{
+    background:#2f9c5b;
+    left:150px;
+    top:160px;
+}
+
+.leaf3{
+    background:#b8f4ef;
+    left:215px;
+    top:120px;
+}
+
+/* Pot */
+
+.pot{
+    width:110px;
+    height:75px;
+    background:#efb520;
+    position:absolute;
+    bottom:55px;
+    left:155px;
+    border-radius:6px;
+}
+
+.pot::before{
+    content:"";
+    position:absolute;
+    width:110px;
+    height:18px;
+    background:#d79d17;
+    top:0;
+    left:0;
+}
